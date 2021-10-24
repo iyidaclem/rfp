@@ -1,0 +1,295 @@
+body{
+    font-family: 'Merriweather', serif;
+    background-color: black;
+    color:white;
+}
+/* p,h3,h4,h5,h6{font-family: 'Zen Old Mincho', serif;} */
+/* colors */
+.color1{
+    color:rgb(231, 81, 12)!important;
+}
+.color1{
+    color:BLACK;
+}
+
+.bg1{
+    background-image: url("../images/background31.jpg");
+    background-size: cover;
+    height: 100vh;
+    filter: blur(0.9px);
+  -webkit-filter: blur(0.9px);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bg2{
+    background: #C02425;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.bg3{
+    background: #C02425;  /* fallback for old browsers */
+      
+}
+
+.bg4{
+    background-color: black;
+}
+
+.bg-text{
+    background-color: rgb(0,0,0,0.1);
+    color: white;
+    font-weight: bold;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+
+
+.toggler_area{
+    display: flex;
+    width: 100px;
+    /* margin: 0 -5px; */
+}
+
+.navbar{ 
+    display: flex;
+    background-color: black;
+    color:white;
+
+}
+.logo{
+    width: 50px;
+}
+
+.navbar ul{
+    display: flex;
+    margin-right: 10%;
+    background-color: black;
+
+}
+
+.navbar ul li{
+    margin:5px 10px;
+    list-style-type: none;
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+.navbar  .toggler{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    display: none;
+    color:white;
+    display: none;
+    z-index: 1000;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:rgb(231, 81, 12);
+    border-radius: 15px;
+}
+.show{
+    display: none;
+}
+
+@media screen and (max-width:560px) {
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0%;
+        padding-top: 5%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0, 0.9);;
+        margin-left: -3.6%;
+        z-index: 3;
+    
+    }
+    .navbar .toggler1{
+        display: block;
+    }
+    
+    .navbar ul li{
+        margin:5px 10px;
+        list-style-type: none;
+        color:white;
+        text-decoration: none;
+        text-align: center;
+        color:red;
+        
+    }
+    
+}
+
+
+/* Raod map */
+
+ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+
+  ol ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+  }
+
+  .rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+  }
+
+  .rounded-list a:hover{
+    background: #eee;
+  }
+
+  .rounded-list a:hover:before{
+    transform: rotate(360deg);
+  }
+
+  .rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+  }
+
+  .q1,.q3{
+      border-left: 2px solid white;
+      /* border-right: 2px solid white; */
+      border-bottom: 2px solid white;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      
+  }
+  .q3{
+      border-left: none;
+  }
+
+  .q2,.q4{
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* margin-left: 1px; */
+    margin-bottom: 15px;
+    
+}
+  
+  @media screen and (max-width:560px){
+   .quarter{
+       border: none;
+       border-left: 2px solid white;
+       border-bottom-left-radius: 15px;
+       border-top-left-radius: 15px;
+       margin:0px;
+   }   
+  }
+
+  /* footer */
+
+  .foot{
+      border-top:1px solid white;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      margin-top: 20px;
+  }
+
+  ul{display: flex; list-style: none;}
+  .socials *{
+      margin:0px 2px;
+  }
+
+  @media screen and (max-width: 560px) {
+
+    .foot *{
+        text-align: center;
+    }
+}
+
+
+/* TEAM MEMBERS */
+
+.card-img{
+    width: 200px;
+    margin:auto;
+    border-radius: 100%;
+}
+
+.team{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.team:hover{
+    opacity: 1;
+    background: #C02425;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.team-list{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+/* partners */
+
+.partner_img{
+    width: 100%;
+}
